@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+nav {
+  background-color: orange;
+  height: 50px;
+}
+
+.nav-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  color: white;
+  font-size: 2rem;
+  font-family: GmarketSansMedium;
+}
+
+.nav-contact {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: orange;
+  font-size: 2rem;
+  font-family: GmarketSansMedium;
+}
+
+.category-container {
+  text-align: center;
+}
+
+.category-title {
+  font-size: 2.5rem;
+}
+
+.category-items{
+    margin-top: 10px;
+}
+
+.category-item {
+  width: 23%;
+  height: 5rem;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.category-item:hover {
+  background-color: rgba(255, 165, 0, 0.5);
+  cursor: pointer;
+}
+
+.inner {
+  padding: 0 1.5rem;
+}
+
+@media all and (min-width: 1024px) {
+  .inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+/* map 관련 css */
+
+body {
+  height: 100vh;
+}
+
+main {
+  padding-top: 1.5rem;
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
