@@ -9,6 +9,7 @@
     <meta name="keywords" content="나,우리 동네 맛집 찾기, 맛집" />
     <title>맛집지도</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./map.css" />
   </head>
 
   <body>
@@ -27,14 +28,14 @@
           <div class="category-container">
             <h2 class="category-title">맛집 카테고리를 선택해보세요</h2>
             <div class="category-items">
-              <button class="category-item">중식</button>
-              <button class="category-item">일식</button>
-              <button class="category-item">한식</button>
-              <button class="category-item">양식</button>
-              <button class="category-item">분식</button>
-              <button class="category-item">구이</button>
-              <button class="category-item">회/초밥</button>
-              <button class="category-item">기타</button>
+              <button class="category-item" id="korea">한식</button>
+              <button class="category-item" id="japan">일식</button>
+              <button class="category-item" id="china">중식</button>
+              <button class="category-item" id="western">양식</button>
+              <button class="category-item" id="wheat">분식</button>
+              <button class="category-item" id="meat">구이</button>
+              <button class="category-item" id="sushi">회/초밥</button>
+              <button class="category-item" id="etc">기타</button>
             </div>
           </div>
         </div>
@@ -43,9 +44,24 @@
       <div id="map" class="inner"></div>
     </main>
 
+    <div class="infowindow">
+      <div class="infowindow-img-container">
+        <img
+          src="https://item.kakaocdn.net/do/41584ca0a4d4fe7f0d1bf82c6ec512f615b3f4e3c2033bfd702a321ec6eda72c"
+          class="infowindow-img"
+          alt=""
+        />
+      </div>
+      <div class="infowindw-body">
+        <h5 class="infowindow-title">할머니집</h5>
+        <p class="infowindow-address">주소주소</p>
+        <a href="" class="infowindow-btn" target="_blank">링크링크</a>
+      </div>
+    </div>
+
     <script
       type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9fc7c3ce87d500fa678ad9c5345cdd4e"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9fc7c3ce87d500fa678ad9c5345cdd4e&libraries=services"
     ></script>
     <script src="script.js"></script>
   </body>
